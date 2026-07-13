@@ -1,294 +1,155 @@
-<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "inverse-primary": "#a1c9ff",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed": "#ffdbce",
-                        "on-surface-variant": "#414751",
-                        "on-surface": "#1a1c1e",
-                        "surface-container-high": "#e8e8ea",
-                        "on-secondary-container": "#5e1e00",
-                        "surface-dim": "#dadadc",
-                        "on-tertiary-container": "#7aeb98",
-                        "on-secondary-fixed-variant": "#7f2b00",
-                        "error-container": "#ffdad6",
-                        "on-tertiary-fixed-variant": "#005226",
-                        "outline": "#717782",
-                        "on-error-container": "#93000a",
-                        "surface-container-low": "#f3f3f6",
-                        "secondary-fixed-dim": "#ffb599",
-                        "surface-tint": "#0861a6",
-                        "primary-container": "#005ea3",
-                        "tertiary-fixed-dim": "#6cdd8c",
-                        "surface-container-highest": "#e2e2e5",
-                        "surface-bright": "#f9f9fc",
-                        "on-primary-container": "#bad7ff",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "surface": "#f9f9fc",
-                        "tertiary": "#004f24",
-                        "primary": "#00467c",
-                        "inverse-on-surface": "#f0f0f3",
-                        "secondary": "#a73a00",
-                        "on-primary": "#ffffff",
-                        "inverse-surface": "#2f3133",
-                        "surface-container": "#eeeef0",
-                        "secondary-container": "#ff6f2f",
-                        "background": "#f9f9fc",
-                        "primary-fixed-dim": "#a1c9ff",
-                        "on-primary-fixed-variant": "#004880",
-                        "on-background": "#1a1c1e",
-                        "tertiary-fixed": "#89faa6",
-                        "error": "#ba1a1a",
-                        "primary-fixed": "#d2e4ff",
-                        "on-error": "#ffffff",
-                        "on-secondary-fixed": "#370e00",
-                        "tertiary-container": "#006a33",
-                        "outline-variant": "#c1c7d2",
-                        "on-tertiary-fixed": "#00210c",
-                        "surface-variant": "#e2e2e5",
-                        "on-primary-fixed": "#001c37"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    spacing: {
-                        "base": "4px",
-                        "gutter": "16px",
-                        "sm": "8px",
-                        "margin": "16px",
-                        "xl": "32px",
-                        "xs": "4px",
-                        "md": "12px",
-                        "lg": "20px"
-                    },
-                    fontFamily: {
-                        "headline-md": ["Montserrat"],
-                        "label-md": ["Montserrat"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "label-sm": ["Montserrat"],
-                        "headline-sm": ["Montserrat"],
-                        "body-sm": ["Montserrat"],
-                        "body-md": ["Montserrat"],
-                        "body-lg": ["Montserrat"],
-                        "headline-lg": ["Montserrat"]
-                    },
-                    fontSize: {
-                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "label-md": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["26px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "label-sm": ["10px", { "lineHeight": "1.2", "fontWeight": "500" }],
-                        "headline-sm": ["20px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "body-sm": ["12px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "body-md": ["14px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "body-lg": ["16px", { "lineHeight": "1.4", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "primary": "#00467c",
+                            "primary-brand": "#005ea3",
+                            "secondary-brand": "#ee6323",
+                            "tertiary-brand": "#058e47",
+                            "inverse-primary": "#a1c9ff",
+                            "surface-container-lowest": "#ffffff",
+                            "secondary-fixed": "#ffdbce",
+                            "on-surface-variant": "#414751",
+                            "on-surface": "#1a1c1e",
+                            "surface-container-high": "#e8e8ea",
+                            "on-secondary-container": "#5e1e00",
+                            "surface-dim": "#dadadc",
+                            "on-tertiary-container": "#7aeb98",
+                            "on-secondary-fixed-variant": "#7f2b00",
+                            "error-container": "#ffdad6",
+                            "on-tertiary-fixed-variant": "#005226",
+                            "outline": "#717782",
+                            "on-error-container": "#93000a",
+                            "surface-container-low": "#f3f3f6",
+                            "secondary-fixed-dim": "#ffb599",
+                            "surface-tint": "#0861a6",
+                            "primary-container": "#005ea3",
+                            "tertiary-fixed-dim": "#6cdd8c",
+                            "surface-container-highest": "#e2e2e5",
+                            "surface-bright": "#f9f9fc",
+                            "on-primary-container": "#bad7ff",
+                            "on-tertiary": "#ffffff",
+                            "on-secondary": "#ffffff",
+                            "surface": "#f9f9fc",
+                            "tertiary": "#004f24",
+                            "inverse-on-surface": "#f0f0f3",
+                            "secondary": "#a73a00",
+                            "on-primary": "#ffffff",
+                            "inverse-surface": "#2f3133",
+                            "surface-container": "#eeeef0",
+                            "secondary-container": "#ee6323",
+                            "background": "#f9f9fc",
+                            "primary-fixed-dim": "#a1c9ff",
+                            "on-primary-fixed-variant": "#004880",
+                            "on-background": "#1a1c1e",
+                            "tertiary-fixed": "#89faa6",
+                            "error": "#ba1a1a",
+                            "primary-fixed": "#d2e4ff",
+                            "on-error": "#ffffff",
+                            "on-secondary-fixed": "#370e00",
+                            "tertiary-container": "#006a33",
+                            "outline-variant": "#c1c7d2",
+                            "on-tertiary-fixed": "#00210c",
+                            "surface-variant": "#e2e2e5",
+                            "on-primary-fixed": "#001c37"
+                        },
+                        borderRadius: {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                        },
+                        spacing: {
+                            "xs": "4px",
+                            "xl": "32px",
+                            "sm": "8px",
+                            "margin": "16px",
+                            "gutter": "16px",
+                            "md": "12px",
+                            "lg": "20px",
+                            "base": "4px"
+                        },
+                        fontFamily: {
+                            "label-sm": ["Montserrat"],
+                            "body-md": ["Montserrat"],
+                            "headline-md": ["Montserrat"],
+                            "headline-lg": ["Montserrat"],
+                            "headline-lg-mobile": ["Montserrat"],
+                            "body-lg": ["Montserrat"],
+                            "body-sm": ["Montserrat"],
+                            "label-md": ["Montserrat"],
+                            "headline-sm": ["Montserrat"]
+                        },
+                        fontSize: {
+                            "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "500" }],
+                            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                            "headline-md": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
+                            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                            "label-md": ["12px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                            "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }]
+                        }
                     }
                 }
             }
-        }
-    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md antialiased flex flex-col min-h-screen">
-<!-- Top Navigation -->
+        } catch (_e) {}
+    }catch(_e){}</script></head><body class="bg-background text-on-background antialiased flex items-center justify-center min-h-screen font-body-md p-4">
 
-<!-- Hero Section -->
-<section class="bg-[#005ea3] text-on-primary py-12 px-margin md:px-gutter relative overflow-hidden">
-<div class="max-w-[1280px] mx-auto relative z-10 text-center">
-<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-[800] mb-3 tracking-tight uppercase leading-tight">
-                Ấn Phẩm Thương Hiệu
-            </h1>
-<p class="font-body-lg text-body-lg max-w-4xl mx-auto mb-4 text-white leading-snug">Trung tâm tài nguyên chia sẻ các ấn phẩm thương hiệu của Trường Đại học Kinh tế – Đại học Đà Nẵng, hướng tới sự thống nhất và chuyên nghiệp trong mọi hoạt động của DUE.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-3">
-<button class="bg-[#ee6323] text-white px-6 py-2.5 rounded-DEFAULT font-label-md hover:bg-secondary-container transition-colors shadow-sm leading-tight">
-                    Khám phá kho mẫu
-                </button>
-<button class="bg-transparent border-2 border-white text-white px-6 py-2.5 rounded-DEFAULT font-label-md hover:bg-white/10 transition-colors leading-tight">
-                    Xem hướng dẫn
-                </button>
-</div>
-</div>
-<!-- Decorative abstract pattern (Tailwind CSS) -->
-<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
-</section>
-<!-- Introduction Section -->
-<section class="py-10 px-margin md:px-gutter bg-surface">
-<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-<div class="rounded-xl overflow-hidden shadow-sm h-[320px]">
-<img alt="University Life" class="w-full h-full object-cover" data-alt="A bright, modern university campus setting with students actively collaborating around a table in a sunlit library. The scene is shot from a wide angle, capturing the energetic and academic atmosphere. Soft natural light, high resolution, professional photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgmfFVsNQB99LvGUwMyyzCVvOQvgTN9Po9-SLaA9snIshHMWx7J8gOsefMPkT0X6wyTI-t8mv_klQLN-AT-OcdOFgM5zwiAHjrTLk7cA_4-XkwYDqSZIjGvcK_ArjAEJnntCFkmxtBYjZ3mm-q8r0Ip4fdYc6wmTFdophOqzMEbSRd8z9RGm3Q4GuZrGk2bb_PsmwB71UxL4bW82_vnDz8XeERYnyqzK5nOjN3Vmo07IsYMk4TfJgMCpkS3-uJv0EhGahDFTg87Q8aD3E">
-</div>
-<div>
-<h2 class="font-headline-md text-headline-md text-primary mb-3 leading-tight">Chào mừng đến với Cổng Thông tin Thương hiệu DUE</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-2 leading-snug">
-                    Nền tảng này được thiết kế nhằm hỗ trợ công tác tổ chức hoạt động, sự kiện, giảng dạy và truyền thông được thuận tiện và thống nhất hơn.
-                </p>
-<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-snug">
-                    Tại đây, bạn có thể dễ dàng truy cập và tải về các mẫu thiết kế, ấn phẩm và biểu mẫu theo chuẩn nhận diện thương hiệu mới của Nhà trường.
-                </p>
-<a class="inline-flex items-center text-primary font-label-md hover:text-surface-tint transition-colors group leading-tight" href="#">
-                    Tìm hiểu thêm về nguyên tắc thương hiệu
-                    <span class="material-symbols-outlined ml-1.5 group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-
-<!-- Scrolling Marquee Section -->
-<div class="bg-[#005ea3] overflow-hidden py-3 border-y border-white/10">
-    <div class="animate-marquee whitespace-nowrap flex items-center">
-        <span class="text-white font-bold uppercase tracking-widest text-sm md:text-base mx-4">DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING</span>
-        <span class="text-white font-bold uppercase tracking-widest text-sm md:text-base mx-4">DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING - DUE BRANDING</span>
-    </div>
-</div>
-
-<!-- Asset Library Grid -->
-<section class="py-10 px-margin md:px-gutter bg-surface-container-lowest">
-<div class="max-w-[1280px] mx-auto">
-<div class="text-center mb-6">
-<h2 class="font-headline-md text-headline-md text-primary mb-2 leading-tight">Thư Viện Ấn Phẩm</h2>
-<div class="flex flex-wrap justify-center gap-2 mt-4">
-<button class="px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm leading-tight">Tất cả</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm transition-colors leading-tight">Logo &amp; Font</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm transition-colors leading-tight">Thư mời</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm transition-colors leading-tight">Sự kiện</button>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-<!-- Card 1 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="Logo Preview" class="object-contain h-full w-full" data-alt="A clean, minimalist vector illustration representing a brand logo identity package. Blue and white color palette, flat design, modern corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAsJN7YEChXnSavorbMc1gnCwrdyoyMdUDuDpJcKvIyKMt0z6R1pY-FiQ3tKfy9sZ9o0MkGVBr8ZtzihZqsMoQOhVWURJfbSednLtW9DcZ5mAbshJhRjXMT26MDAaFnt4atp6XGMzYtPZ9L5_Ceu5SQeLyuU_bU9M7fdbclwLjn0eFeLVOAsIYg89dEREeriDybzmHM8DSD1unKNSxKJB-OUzapMwV3JXgotqNveAHOtvFi0YQiRqWPpMa1ewjIoOuTKlqbxxl_9jd">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Truy cập</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Bộ Nhận diện Logo</h3>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="Font Preview" class="object-contain h-full w-full" data-alt="A sleek typography specimen layout showcasing the Gilroy font family. High contrast, sharp edges, displaying various font weights in a professional grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEJj7STPF2bcxC-iEYgv5J1QWvajvMMQ0-Z5uV0p_6RmlIegixCNpQ0v_eLK9zOoQw1PKL9uXIfq36vBxl0427ZEsBesURZjBwUQJu9-GShKOB7G09u9pnzPIocYmCO86st0ScbYMunixxI75jZByQStICFJjvV5lQQuCZ-sGqqpp3LUK6p9rztWGa2QCXCHXn_iNA1OzDpviD7Hj0wq20iIGL05upkM3g8pqEO51Fgxag5ZY3J7UbyMX33WGi54bll5nYBBT8lJvr">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Truy cập</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Bộ Font SVN - Gilroy</h3>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="A4 Invitation Preview" class="object-contain h-full w-full" data-alt="A highly realistic mockup of a folded A4 invitation card on a textured white desk surface. Soft, elegant lighting casting gentle shadows. Corporate event theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQK866zoYB0v1zVDErzLonsm4pnSjLHcubVhwUIrcpzkBb9Waln7pAys3bAWLYhpVGJL3ebZBudgxAl9qnRky-uzOvQbwcVWuD42shT5lAIxkTMDyhSCqmt7fenA9bxcf2BwfeTCrugupW75uzBwPNn-z0LvBMffI0jO6alLiD0hoPZjeyWgHH-T3LVS2Lw33xOb6siTVomONU6nqZNt8ii71TORHPA-z899lpicPZoW8vGM6wTMDNsOCvZABLv9SqG96j8KDx5cQr">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Tải về</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Thư mời A4 (Gấp đôi)</h3>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="A5 Invitation Preview" class="object-contain h-full w-full" data-alt="A photorealistic mockup of an A5 flat invitation card lying next to an open envelope. Minimalist design, warm natural lighting from a window." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6SNd_Pj83-mUTgklDjZTMK6PdaCwQtVlUzBnzMQqoPksrOsoX6WDDafPkWCkPzpc1k2OY9TW-oO3DC8sm1PtMMmIiL7PzKWQQSV5GkDeM-rKoS5XdQJ_u2TAZOWYZFgjGxLFzr6u6r25nmJWLy3Dmq0ZHaSIdYRKWULneWTKyIapK-egwuKm0bBpcMfFTRNmoPy0Z_Xv7UI60aDFtxGPvwLdT8BXh2j3rkWYqEVSuYtps-ymNj8PmDXSypyhJB9wmwsaQVi6HU1KL">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Tải về</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Thư mời A5</h3>
-</div>
-</div>
-<!-- Card 5 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="A4 Open Letter Preview" class="object-contain h-full w-full" data-alt="A clean, professional mockup of a standard A4 open letter template with corporate letterhead on a dark wooden desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2wSbdb76pGHtRES4BSmbch22xXI2gk0cYJkJjXdDhNWAFjlh_JqX2x6f7FDawZmyumfWE6Eebu61dCf1EwLzhPo8X5XzPDLFUtfuaQqEFyoqcnTnsI5hq4dgPsujRt2xB5IgqahOEp7fmGjykUclxLi1sm2OYY-fvZPZdIiEU1zIfg9KZoU0eODHdqPHt58PLRje14_BnF3RNHPZMB_cgYNMQtmeUlx9s1WiqxEavmrWRkD_8a-DHXcQWbcZpLcTCihp6UyUgFaku">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Tải về</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Thư ngỏ A4 (Tiêu chuẩn)</h3>
-</div>
-</div>
-<!-- Card 6 -->
-<div class="group bg-surface rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-shadow">
-<div class="h-40 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<img alt="Backdrop Preview" class="object-contain h-full w-full" data-alt="A vibrant mockup of a large event backdrop stage design. Bright blue and orange colors, modern geometric patterns, conveying a lively university event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4gIRVem84zRT4F2pKK6vLvT8YDf--NFPdfKLNGrTaJZfuSyHHrprLJgjf4RaClx9Vw9DuQNlQ-X5Uu7rGjcgEq00WvDnLdNwakfO-O0cEsMxyBaUStjxYK2ScxYaVMNPbS3zPkSCbGWsD49Y72m3QtRUduqk5QS0LZhoEYKGBestOharAzRsxi-HcbhMXdfhW3hs-pY8yHR_2qRzIhJwldtZ4AJlG5rjauMozuh_OVI_FMpe2TlXW1DqTA-i9yWz94zfx8399NGvp">
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-<button class="bg-primary text-on-primary px-5 py-2 rounded font-label-md leading-tight">Tải về</button>
-</div>
-</div>
-<div class="p-3 border-t border-outline-variant">
-<h3 class="font-label-md text-label-md text-on-surface leading-tight">Backdrop Chương trình</h3>
-</div>
-</div>
-</div>
-<div class="mt-6 text-center">
-<button class="text-primary hover:text-surface-tint font-label-md transition-colors inline-flex items-center gap-1.5 leading-tight">
-<span class="material-symbols-outlined text-[20px]">refresh</span>
-                    Các ấn phẩm khác đang được cập nhật...
-                </button>
-</div>
-</div>
-</section>
-<!-- Custom Request Banner -->
-<section class="bg-[#ee6323] py-8 px-margin md:px-gutter">
-<div class="max-w-[1280px] mx-auto text-center">
-<h2 class="font-headline-sm text-headline-sm text-white mb-4 uppercase tracking-wider leading-tight">Cần Hỗ Trợ Thiết Kế Riêng?</h2>
-<button class="bg-white text-[#ee6323] px-6 py-2.5 rounded-DEFAULT font-label-md hover:bg-surface-container-lowest transition-colors shadow-sm uppercase tracking-wide leading-tight">
-                Gửi yêu cầu hỗ trợ
+    <!-- Modal Content Only -->
+    <div class="relative bg-surface-container-lowest w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden" id="download-modal">
+        <div class="flex items-center justify-between p-6 border-b border-outline-variant">
+            <h2 class="font-headline-sm text-headline-sm text-primary-brand uppercase">Tải về tài nguyên</h2>
+            <button class="text-on-surface-variant hover:text-error transition-colors">
+                <span class="material-symbols-outlined">close</span>
             </button>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-surface-container-highest dark:bg-surface-container-lowest mt-auto border-t-0 full-width">
-<div class="max-w-container-max mx-auto">
-<div class="py-6 px-gutter grid grid-cols-1 md:grid-cols-3 gap-4">
-<!-- Branding & Contact -->
-<div>
-<div class="font-headline-md text-headline-md text-primary mb-3 font-bold leading-tight">DUE Media</div>
-<div class="space-y-2">
-<div class="flex items-start gap-2">
-<span class="material-symbols-outlined text-on-surface-variant text-[20px]">location_on</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-                                 Phòng H-206, 71 Ngũ Hành Sơn,<br>Tp. Đà Nẵng
-                             </p>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-on-surface-variant text-[20px]">mail</span>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors leading-snug" href="mailto:media@due.edu.vn">media@due.edu.vn</a>
-</div>
-</div>
-</div>
-<!-- Links -->
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-label-md text-on-surface mb-1 uppercase leading-tight">Liên kết nhanh</h4>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors leading-snug" href="#">Privacy Policy</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors leading-snug" href="#">Terms of Service</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors leading-snug" href="#">Contact Us</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors leading-snug" href="#">DUE Website</a>
-</div>
-<!-- Quote/Image -->
-<div class="flex flex-col h-full justify-between">
-<div class="bg-surface-variant p-3 rounded-lg text-center shadow-inner h-24 relative overflow-hidden group">
-<img alt="Faculty Team" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A panoramic photograph of a diverse group of university faculty members standing confidently in front of the main campus building. Formal attire, smiling, professional institutional portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEehuqMBbjFMltHd09-5NDJkFIwOqo5mxWqC8C4iqXDhfc4v8s26sYWo37Mv4Q67MNn2AiGT9kquPgIJCmwbCrSZ-M85tqmxLQLx87o6zDlRNHCCeUokfvL1LBPnbf-0xbvNqbE75n5kKUG9LAg1uOLL4HpqjGWIL82ZcKs-dzXtQQ5V5ErT5hVe_6nZxuxU_hP4Yx4zs_XpZKEYb7I8IlIJS9kZnO4tJ_Sgj9G2z8hciw8TSvvKGBLBAqKl3SU4iQMgS76vDpjuzu">
-<div class="absolute inset-0 bg-black/50"></div>
-<div class="relative z-10 flex h-full items-center justify-center p-2">
-<p class="font-label-sm text-label-sm text-white italic text-center leading-snug">
-                                 "Mỗi thầy cô giáo là một tấm gương đạo đức, tự học và sáng tạo"
-                             </p>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Bar -->
-<div class="flex flex-col md:flex-row justify-between items-center py-4 px-gutter border-t border-outline-variant/30 bg-surface-container-highest">
-<p class="font-label-lg text-label-lg text-on-surface-variant text-xs leading-tight"></p></div></div></footer></body></html>
+        </div>
+        <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Canva Option -->
+                <div class="group border border-outline-variant rounded-xl p-6 hover:border-primary-brand hover:shadow-md transition-all text-center">
+                    <div class="w-16 h-16 bg-primary-brand/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="material-symbols-outlined text-primary-brand text-3xl" data-original-icon="design_services">design_services</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Mẫu Canva</h3>
+                    <div class="space-y-3">
+                        <a href="https://www.canva.com/design/DAG4Z9mpxrY/n8-WosPjIY37r-DRHQuF_g/edit?utm_content=DAG4Z9mpxrY&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="w-full bg-primary-brand text-white py-2.5 rounded-lg font-bold hover:opacity-90 transition-opacity shadow-md text-sm uppercase inline-flex items-center justify-center">Mở trên Canva</a>
+                        <a class="inline-block text-primary-brand font-medium hover:underline text-sm" href="#">Hướng dẫn chỉnh sửa</a>
+                    </div>
+                </div>
+                <!-- Word Option -->
+                <div class="group border border-outline-variant rounded-xl p-6 hover:border-secondary-brand hover:shadow-md transition-all text-center">
+                    <div class="w-16 h-16 bg-secondary-container/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="material-symbols-outlined text-secondary-brand text-3xl">description</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Mẫu Microsoft Word</h3>
+                    <div class="space-y-3">
+                        <button class="w-full bg-secondary-container text-white py-2.5 rounded-lg font-bold hover:opacity-90 transition-opacity shadow-md text-sm uppercase">Tải tệp .docx</button>
+                        <a class="inline-block text-secondary-brand font-medium hover:underline text-sm" href="#">Hướng dẫn chỉnh sửa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 space-y-4 border-t border-outline-variant pt-6">
+                <p class="text-[13px] text-on-surface-variant leading-relaxed italic">
+                    * Nếu Thầy/ Cô đang sử dụng Canva Đội/ Nhóm, hãy liên hệ với Quản trị viên của Đội/ Nhóm để cấp quyền truy cập đối với các thiết kế bên ngoài đội (Theo chính sách của Canva). Hoặc sử dụng Mẫu Microsoft Word.
+                </p>
+                <div class="bg-surface-container-low p-3 rounded-lg">
+                    <p class="text-[13px] text-on-surface font-medium mb-1">
+                        Mẫu có sử dụng một số font chữ bên dưới, Quý thầy cô có thể tải về và cài đặt để không bị lỗi font:
+                    </p>
+                    <a href="https://www.dafontvn.com/2021/01/tai-tron-bo-font-gilroy-viet-hoa-20.html" class="text-[13px] text-primary-brand font-bold hover:underline inline-flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined text-[18px]">download</span>Font SVN Gilroy - Tải về tại đây
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-surface-container-low p-4 text-center">
+            <p class="text-body-sm text-on-surface-variant">Vui lòng đăng nhập bằng email @due.edu.vn để truy cập tài nguyên.</p>
+        </div>
+    </div>
+
+</body></html>
